@@ -1,14 +1,3 @@
-$(function(){
-
-  $.mask.definitions['9']='';
-  $.mask.definitions['d']='[0-9]';
-  $("#phone").mask("+998 (dd) ddd-dd-dd");
-  $("#id_card").mask("KNG-dddd");
-  $("#card").mask("8600 dddd dddd dddd dddd");
-  $("#exp").mask("dd/dd");
-  $("#date").mask("dd/dd/dd");
-
-});
 $( document ).ready(function() {
   
    function check(form_id) {
