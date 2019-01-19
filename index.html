@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title></title>
+	<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-3.3.1.min.js"></script>	
+</head>
+<body>
+	<div class="container-fluid m-0 p-0">
+		<div class="background">
+			<div class="container">
+				<div class="nav">
+					<a href="" role="button" class="btn button disable-links">Главная</a>
+					<a href="" role="button" class="btn reg_btn disable-links">Регистрация</a>
+				</div>
+				<section class="col-xl-5 col-lg-5 col-md-8 col-12 m-auto main" >
+						<div class="user_form">
+							<h5 class="text-center">ОСНОВНЫЕ ДАННЫЕ</h5>
+							<form action="" id="form_1" class="">
+								<div class="form-group col-xl-10 col-lg-10 col-md-10 col-12 w-100 m-auto">
+									<label for="name">Ф.И.О участника</label>
+									<input type="text" class="form-control" name="name">
+								</div>
+								<div class="form-group col-xl-10 col-lg-10 col-md-10 col-12 w-100 m-auto">
+									<label for="phone">Номер телефона</label>
+									<input type="text" class="form-control" id="phone" name="phone">
+								</div>
+								<div class="form-group col-xl-10 col-lg-10 col-md-10 col-12 w-100 m-auto">
+									<label for="dob">Дата рождения</label>
+									<input type="text" class="form-control" name="dob" id="date">
+								</div>
+								<div class="form-group col-xl-10 col-lg-10 col-md-10 col-12 w-100 m-auto">
+									<label for="email">Электронная почта</label>
+									<input type="text" class="form-control" name="email">
+								</div>
+								<div class="form-group btn_gr w-100 col-xl-10 col-lg-10 col-md-10 col-12">
+									<a href="#" id="go_to_school" role="submit" class="btn button" >Далее</a>
+								</div>
+							</form>
+						</div>
+				</section>	
+				<section class="col-xl-5 col-lg-5 col-md-8 col-12 m-auto about_school">
+						<div class="user_form">
+							<h5 class="text-center">ДАННЫЕ О ШКОЛЕ</h5>
+							<form id="form_2" action="" class="">
+								<div class="form-group col-xl-10 col-lg-10 col-md-10 col-12 w-100 m-auto">
+									<label for="region">Город/Регион</label>
+									<select name="region" id="region" class="form-control" >
+										<option value="default" selected="" disabled="">Выберите Город</option>
+									</select>
+								</div>
+								<div class="form-group col-xl-10 col-lg-10 col-md-10 col-12 w-100 m-auto">
+									<label for="district">Район</label>
+									<select name="district" id="district" class="form-control" disabled="">
+										<option value="default" selected="">Выберите Район</option>
+									</select>
+								</div>
+								<div class="form-group col-xl-10 col-lg-10 col-md-10 col-12 w-100 m-auto">
+									<label for="school_num">Номер/название школы</label>
+									<select type="text" class="form-control" name="school_num">
+										<option value="n_1">Школа №1</option>
+										<option value="n_2">Школа №2</option>
+										<option value="n_3">Школа №3</option>
+										<option value="n_4">Школа №4</option>
+										<option value="n_5">Школа №5</option>
+										<option value="n_6">Школа №6</option>
+										<option value="n_7">Школа №7</option>
+									</select>
+								</div>
+								<div class="form-group col-xl-10 col-lg-10 col-md-10 col-12 w-100 m-auto">
+									<label for="class">Класс</label>
+									<input type="text" class="form-control" name="class">
+								</div>
+								<div class="form-group buttons_gr w-100 col-xl-10 col-lg-10 col-md-10 col-12">
+									<a href="#" id="back_to_main" role="button" class="btn button_back" >Назад</a>
+									<a href="#" id="go_to_payment" role="submit" class="btn button" >Далее</a>
+								</div>
+							</form>
+						</div>
+				</section>
+				<section class="col-xl-5 col-lg-5 col-md-8 col-12 m-auto payment" >
+						<div class="user_form">
+							<h5 class="text-center">ОПЛАТА</h5>
+							<form action="" id="form_3" class="">
+								<div class="form-group col-xl-10 col-lg-10 col-md-10 col-12 w-100 m-auto">
+									<label for="id_card">Ваш идентификационный номер (ID)</label>
+									<input type="text" class="form-control" placeholder="KNG-00000" id="id_card" name="id_card">
+								</div>
+								<div class="form-group col-xl-10 col-lg-10 col-md-10 col-12 w-100 m-auto">
+									<label for="money">Сумма</label>
+									<input type="text" class="form-control" placeholder="400 000 сум" name="money">
+								</div>
+								<div class="form-group col-xl-10 col-lg-10 col-md-10 col-12 w-100 m-auto">
+									<label for="num_card">Номер карты</label>
+									<input type="text" class="form-control" placeholder="8600 ХХХХ YYYY ZZZZ WWWW" id="card" name="num_card">
+								</div>
+								<div class="form-group col-xl-10 col-lg-10 col-md-10 col-12 w-100 m-auto">
+									<label for="exp_date">Годен до</label>
+									<input type="text" class="form-control" placeholder="30/22" id="exp" name="exp_date">
+								</div>
+								<div class="form-group buttons_gr w-100 col-xl-10 col-lg-10 col-md-10 col-12">
+									<a href="#" id="back_to_school" role="button" class="btn button_back" >Назад</a>
+									<a href="#" id="submited" role="submit" class="btn button" >Оплатить</a>
+								</div>
+							</form>
+						</div>
+				</section>			
+			</div>
+		</div>
+	</div>
+	<script src="js/script.js"></script>	
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="bootstrap/bootstrap.min.js"></script>
+</body>
+</html>

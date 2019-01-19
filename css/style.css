@@ -1,0 +1,111 @@
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+	color: #4C4C4C;
+}
+.background{
+	background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../img/bg2.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center ;
+	background-repeat: no-repeat;
+	width: 100%;
+	min-height: 100vh;
+}
+.background a{
+	color:  white;	
+	background: none;
+}
+.background .container .nav{
+	padding-top: 15px;
+}
+.background .button{
+	color: black;
+	padding: 6px 18px;
+	background-color: #00C6D7;
+	border-radius: 0px;
+	font-weight: 600;
+}
+.background .user_form{
+	background: #fff;
+	border-radius: 10px;
+	width: 100%;
+	min-height: 460px;
+	margin-top: 6vh;
+	padding: 10px;
+}
+.background .user_form h5{
+	font-weight: 600;
+	margin-top: 20px;
+	font-size: 1.25em;
+}
+.background .user_form label{
+	color: #959595;
+	font-size: 0.85em;
+	margin-bottom: 3px;
+	margin-top: 15px;
+}
+.background .user_form input{
+	border: 1px solid #D0D0D0;
+	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+	border-radius: 5px;
+}
+.background .user_form select{
+	border: 1px solid #D0D0D0;
+	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+	border-radius: 5px;
+}
+.background .user_form .button_back{
+	color: black;
+	padding: 6px 18px;
+	background-color: #D5D5D5;
+	border-radius: 0px;
+	font-weight: 600;
+	margin-top: 20px;
+}
+.background .user_form .button{
+	margin-top: 20px;
+}
+.buttons_gr{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+}
+.btn_gr{
+	margin: auto;
+}
+.btn_gr a{
+	float: right;
+}
+::placeholder{
+	font-size: 0.86em;
+}
+
+.disable-links{
+	 pointer-events: none;
+}
+
+.about_school{
+	display: none;
+}
+.payment{
+	display: none;
+}
+/*@media only screen and (max-width: 576px) {
+    h1, h2{
+    	font-size: 1.7em;
+    }
+    ul li a img{
+    	width: 70%;
+    	height: 70%;
+    }
+  
+}*/
