@@ -8,10 +8,11 @@ $( document ).ready(function() {
   //       $('.error').css({"font-size":"0.75em", "color": "red"});
   //   }
   // });
-   $.mask.definitions['9']='';
-  $.mask.definitions['d']='[0-9]';
-  $("#phone").mask("+998 (dd) ddd-dd-dd");
-    $("#id_card").mask("KNG-dddd");
+   // $.mask.definitions['9']='';
+   // $.mask.definitions['d']='[0-9]';
+   $("#phone").mask("+998 (00) 000-00-00");
+   $("#id_card").mask("KNG-0000");
+
    $('#email').keyup(function() {
     $('span.error-keyup-7').remove();
     var inputVal = $(this).val();
@@ -31,7 +32,6 @@ $( document ).ready(function() {
 //         $('.error').css({"font-size":"0.75em", "color": "red"});
 //     }
 // });
-    // var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     var cleave = new Cleave('#date', {
     date: true,
     datePattern: ['d', 'm', 'Y']
