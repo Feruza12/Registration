@@ -87,6 +87,7 @@ body{
 }
 ::placeholder{
 	font-size: 0.86em;
+	color: #fafafa;
 }
 
 .disable-links{
