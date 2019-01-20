@@ -2,7 +2,10 @@ $( document ).ready(function() {
    $("#phone").mask("+998 (dd) ddd-dd-dd");
    $("#id_card").mask("KNG-dddd");
    $('#date').mask("dd/dd/dddd");
-   $('#class').mask("d");
+   $('#class').mask("dd");
+   $('#money').mask("#,###", {reverse: true});
+   $('#card').mask("8600 dddd dddd dddd");
+   $('#exp').mask("dd/dd");
    $('#email').keyup(function() {
     $('span.error-keyup-7').remove();
     var inputVal = $(this).val();
