@@ -1,17 +1,67 @@
 $( document ).ready(function() {
-  
+  //  $('#date').keyup(function() {
+  //   $('span.error-keyup-5').remove();
+  //   var inputVal = $(this).val();
+  //   var dateReg = /^[0,1]?\d{1}\/(([0-2]?\d{1})|([3][0,1]{1}))\/(([1]{1}[9]{1}[9]{1}\d{1})|([2-9]{1}\d{3}))$/;
+  //   if(!dateReg.test(inputVal)) {
+  //       $(this).after('<span class="error error-keyup-5">Invalid date format.</span>');
+  //       $('.error').css({"font-size":"0.75em", "color": "red"});
+  //   }
+  // });
+   $.mask.definitions['9']='';
+  $.mask.definitions['d']='[0-9]';
+  $("#phone").mask("+998 (dd) ddd-dd-dd");
+    $("#id_card").mask("KNG-dddd");
+   $('#email').keyup(function() {
+    $('span.error-keyup-7').remove();
+    var inputVal = $(this).val();
+    var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+    if(!emailReg.test(inputVal)) {
+        $(this).after('<span class="error error-keyup-7">Invalid Email Format.</span>');
+        $('.error').css({"font-size":"0.75em", "color": "red"});
+    }
+  });
+
+//    $('#phone').keyup(function() {
+//     $('span.error-keyup-4').remove();
+//     var inputVal = $(this).val();
+//     var characterReg = /^[2-9]\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$/;
+//     if(!characterReg.test(inputVal)) {
+//         $(this).after('<span class="error error-keyup-4">Format xxx-xxx-xxxx</span>');
+//         $('.error').css({"font-size":"0.75em", "color": "red"});
+//     }
+// });
+    // var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    var cleave = new Cleave('#date', {
+    date: true,
+    datePattern: ['d', 'm', 'Y']
+    });
+    // var cleave = new Cleave('#phone', {
+    // phone: true,
+    // phoneRegionCode: 'UZ'
+    // });
+   /* var cleave = new Cleave('#id_card', {
+    prefix: 'KNG',
+    delimiter: '-',
+    blocks: [ 3, 4],
+    uppercase: true
+});*/
    function check(form_id) {
     var flag;
       var arr = $(form_id +' input, ' +form_id + ' select').serializeArray();
       $.each(arr, function(i , field){
         if(!field.value){
           var errlabel = $( form_id +' label[for="'+field.name+'"]').html();
-          alert("Fill this line "+ errlabel);
+          // alert("Fill this line "+ errlabel);
+          var err = $(form_id + ' input[name="'+ field.name+'"]');
+          err.css("border", "2px solid red");
           flag=false;
           return false;
         }
         else{
           flag=true;
+          var err = $(form_id + ' input[name="'+ field.name+'"]');
+          err.css("border", "1px solid #D0D0D0");
         }
       });
       console.log(flag);

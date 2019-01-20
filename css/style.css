@@ -99,6 +99,11 @@ body{
 .payment{
 	display: none;
 }
+
+span .error-keyup-5{
+	font-size: 0.75em;
+	color: red;
+}
 /*@media only screen and (max-width: 576px) {
     h1, h2{
     	font-size: 1.7em;
