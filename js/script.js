@@ -95,7 +95,7 @@ $( document ).ready(function() {
           "code": "08000"
         },
         {
-          "name": "Кашкадарьz",
+          "name": "Кашкадарья",
           "code": "10000"
         },
         {

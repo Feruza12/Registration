@@ -34,7 +34,7 @@ body{
 	background: #fff;
 	border-radius: 10px;
 	width: 100%;
-	min-height: 460px;
+	min-height: 470px;
 	margin-top: 6vh;
 	padding: 10px;
 }
@@ -78,6 +78,7 @@ body{
 	display: flex;
 	justify-content: space-between;
 	margin: auto;
+	/*margin-bottom: 15px;*/
 }
 .btn_gr{
 	margin: auto;
